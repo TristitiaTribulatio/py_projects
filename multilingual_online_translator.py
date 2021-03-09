@@ -74,20 +74,18 @@ def print_translation(languages, words_text, examples_text, second_lang):
 
 
 def save_and_read_translation(languages, words_text, examples_text, second_lang, word):
-    save_file = open(f"{word}.txt", "a", encoding="utf-8")
-    save_file.write(f"""
+    with open(f"{word}.txt", "a", encoding="utf-8") as save_file:
+        save_file.write(f"""
 {languages[second_lang]} translations:
 {words_text[0]}
 
 {languages[second_lang]} Examples:
 {examples_text[0]}
-{examples_text[1]}  
-    """)
-    save_file.close()
+{examples_text[1]}
+        """)
 
-    read_file = open(f"{word}.txt", "r", encoding="utf-8")
-    print(read_file.read())
-    read_file.close()
+    with open(f"{word}.txt", "r", encoding="utf-8") as read_file:
+        print(read_file.read())
 
 
 if __name__ == "__main__":

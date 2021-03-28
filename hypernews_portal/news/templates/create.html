@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREATE</title>
+</head>
+<body>
+    <h3>Create news</h3>
+    <form method="post" class="create">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Enter title">
+        <input type="text" name="text" placeholder="Enter description">
+        <input type="submit" value="Create news">
+    </form>
+    <a href="/news/" class="news">NEWS</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/operator_menu.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OPERATOR MENU</title>
+</head>
+<body>
+    <div class="queue">Change oil queue: {{ change_oil }}</div>
+    <div class="queue">Inflate tires queue: {{ inflate_tires }}</div>
+    <div class="queue">Get diagnostic queue: {{ diagnostic }}</div>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Process next</button>
+    </form>
+</body>
+</html>

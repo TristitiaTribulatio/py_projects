@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/ticket_queue.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TICKET QUEUE</title>
+</head>
+<body>
+    <div class="ticket">Your number is {{ c_ticket }}</div>
+    <div class="time">Please wait around {{ c_wait }} minutes</div>
+</body>
+</html>

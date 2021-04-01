@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#ffbb81, #be8b60);
+}
+
+div.time, div.ticket {
+    font-size: 2em;
+    margin: 1% 0;
+}

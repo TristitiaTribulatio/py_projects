@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/next.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROCESS NEXT</title>
+</head>
+<body>
+    {% if not empty %}
+        <div class="ticket">Next ticket #{{ num_of_ticket }}</div>
+    {% else %}
+        <div class="ticket">Waiting for the next client</div>
+    {% endif %}
+</body>
+</html>

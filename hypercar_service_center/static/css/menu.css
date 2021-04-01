@@ -1,0 +1,15 @@
+a {
+    background-color: #ffe1c0;
+    text-decoration: none;
+    padding: 3%;
+    margin: 1% 0;
+    font-size: 2em;
+    min-width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+
+a:hover {
+    box-shadow: 0 0 5px black;
+}

@@ -1,0 +1,39 @@
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+button {
+    min-width: 100%;
+    border: 0;
+    color: white;
+    padding: 3%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff4591;
+    font-size: 1.5em;
+}
+
+button:hover {
+    box-shadow: 0 0 5px black;
+}
+
+tr {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin: 0 0 10% 0;
+}
+
+th > label {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+td > input[type="text"], td > input[type="password"] {
+    font-size: 1.5em;
+    outline: none;
+    border: 0;
+}

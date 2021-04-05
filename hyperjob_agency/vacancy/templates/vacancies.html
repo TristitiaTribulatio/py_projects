@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/resumes_and_vacancies.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VACANCIES</title>
+</head>
+<body>
+    {% for vacancy in vacancies %}
+        <div class="vacancy">{{ vacancy.author }}: {{ vacancy.description }}</div>
+    {% endfor %}
+</body>
+</html>

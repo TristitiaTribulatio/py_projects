@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/resumes_and_vacancies.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESUMES</title>
+</head>
+<body>
+    {% for resume in resumes %}
+        <div class="resume">{{ resume.author }}: {{ resume.description }}</div>
+    {% endfor %}
+</body>
+</html>

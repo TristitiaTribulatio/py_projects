@@ -1,0 +1,34 @@
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form > label {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+form > input[type="text"] {
+    font-size: 1.5em;
+    padding: 1%;
+    outline: none;
+    border: 0;
+}
+
+form > input[type="submit"] {
+    min-width: 100%;
+    border: 0;
+    color: white;
+    padding: 3%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff4591;
+    font-size: 1.5em;
+}
+
+form > input[type="submit"]:hover {
+    box-shadow: 0 0 5px black;
+}

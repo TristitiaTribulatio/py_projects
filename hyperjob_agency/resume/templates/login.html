@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/auth_and_reg.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+    <form method="post" action="login">{% csrf_token %}
+      <table>{{ form.as_table }}</table>
+      <button type="submit">Auth</button>
+    </form>
+</body>
+</html>

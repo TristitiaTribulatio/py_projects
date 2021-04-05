@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px black;
+}
+
+h2 {
+    margin-bottom: 3%;
+    font-size: 3em;
+    text-shadow: 0 0 5px white;
+}
+
+div.link {
+    margin-bottom: 1.5%;
+}
+
+a:hover {
+    text-shadow: 0 0 10px black;
+}

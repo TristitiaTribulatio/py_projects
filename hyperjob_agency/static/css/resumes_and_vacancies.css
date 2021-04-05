@@ -1,0 +1,9 @@
+body {
+    justify-content: space-evenly;
+}
+
+div.resume, div.vacancy {
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
